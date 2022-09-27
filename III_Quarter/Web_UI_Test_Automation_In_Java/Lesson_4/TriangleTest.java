@@ -7,10 +7,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class TriangleTest {
+    Logger logger = LoggerFactory.getLogger(TriangleTest.class);
 
     @ParameterizedTest
     @CsvSource({"3, 5, 6", "0, 5, 6"})
     public void nullCheckTest(int a, int b, int c) {
+        logger.info("ИНФО");
+        logger.error("ОШИБКА");
         Assertions.assertTrue(Triangle.isNull(a, b, c));
     }
 
