@@ -1,2 +1,2 @@
 # Software_Testing
-Theoretical and practical tasks for the course 'Software Testing'
+Practical tasks for the course 'Software Testing'
